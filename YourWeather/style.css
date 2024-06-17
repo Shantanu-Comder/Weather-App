@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 32%, 63%);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+
+.search {
+    background-color: #3498db;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: backgroung-color 0.3s ease;
+}
+
+.search:hover {
+    background-color: #2980b9;
+}
+
+.first {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first .city {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.first .date {
+    background-color: #c3eaf4;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.second {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.second .temp {
+    font-size: 10rem;
+}
+
+.second .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.second .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.second .description span {
+    font-size: 1.5rem;
+}
+
+.third {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-div,
+.humidity-info,
+.visibility-info {
+    background-color: #ecf0f1;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.third .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-div div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+}
+
+
+.hover:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 0 10px black;
+}
+
+.container{
+    width: 100%;
+    height: 85%;
+    background-image: url('/bg.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
